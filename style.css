@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+}
+h1 {
+  color: #fff;
+}
+
+#jarvis {
+  width: 20vw;
+  margin-right: 50px;
+  filter: drop-shadow(10px 10px 50px rgb(43, 108, 212));
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 50px rgb(43, 108, 212));
+  animation: shadowChange 1s infinite alternate;
+}
+#name {
+  color: rgb(212, 43, 122);
+  font-size: 45px;
+}
+#va {
+  color: rgb(43, 206, 212);
+  font-size: 45px;
+}
+
+#voice {
+  width: 150px;
+  display: none;
+}
+
+#btn {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(to right, rgb(165, 165, 166), rgb(0, 72, 0));
+  box-shadow: 1px 1px 2px white;
+
+  &:hover{
+          
+          cursor: pointer;
+          letter-spacing: 1px ;
+          transition: 0.5s;
+  }
+}
+#btn img {
+  width: 25px;
+}
+
+@keyframes shadowChange {
+  0% {
+    filter: drop-shadow(10px 10px 50px rgb(5, 67, 169));
+  }
+  100% {
+    filter: drop-shadow(10px 10px 50px rgb(49, 155, 4));
+  }
+}
+
+
+@media (max-width:768px){
+  #jarvis {
+    width: 67vw; /* Adjust width for Galaxy A51 */
+    margin-right: 40px; /* Adjust margin */
+  }
+  h1{
+    font-size: 20px;
+padding: 10px;
+    margin-left: 20px;
+  }
+  #btn{
+    padding: 5px 20px;
+    width: 200px;
+    font-size: 15px;
+  }
+}
